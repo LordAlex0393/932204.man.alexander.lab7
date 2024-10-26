@@ -9,6 +9,18 @@ function getRandomInt(min, max) {
 }
 
 function createShape(type) {
+    const input = document.getElementById('quantity');
+    const message = document.getElementById('message');
+    const value = parseInt(input.value, 10);
+
+    if (value < 1 || value > 100) {
+        message.textContent = "Пожалуйста, введите число от 1 до 100.";
+        return;
+    } else {
+        message.textContent = "";
+    }
+
+
     const shape = document.createElement('div');
     shape.classList.add('shape', type);
 
