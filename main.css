@@ -1,0 +1,14 @@
+#container {
+    width: 1800px;
+    height: 900px;
+    border: 0px solid black;
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    border: 0px solid black;
+}
+
+.selected {
+}
